@@ -5,8 +5,6 @@ import { storyData, StorySection } from './data/storyData';
 import TableauViz from './components/TableauViz';
 import Sticker from './components/Sticker';
 
-const TABLEAU_URL = "https://public.tableau.com/views/FinalProject-StoryWhyITurnedVegan/Veganism";
-
 interface SectionProps {
   section: StorySection;
   onInView: (id: number) => void;
@@ -132,7 +130,7 @@ const StorySectionWrapper: React.FC<{ section: StorySection; onInView: (id: numb
           style={{ opacity: chartOpacity, scale: chartScale, y: chartY }}
           className="w-full h-full max-w-[92vw] max-h-[85vh] relative rounded-[4rem] overflow-hidden shadow-[0_0_150px_rgba(0,0,0,0.2)] border-[12px] border-cream-dark bg-white pointer-events-auto"
         >
-          <TableauViz vizUrl={TABLEAU_URL} activeStoryPoint={section.visualId} />
+          <TableauViz vizUrl={section.tableauSheet} />
           
           {/* Subtle Decorative Frame */}
           <div className="absolute top-10 left-10 w-20 h-20 border-t-2 border-l-2 border-dg/5 rounded-tl-[2.5rem] pointer-events-none" />
