@@ -22,12 +22,12 @@ export const storyData: StorySection[] = [
   {
     id: "meat-production",
     title: "The Rising Line",
-    subtitle: "Global Meat Production",
+    subtitle: "Global Meat Production 1961-2023",
     category: "Global Scale",
     paragraphs: {
-      explanation: "This line tracks global meat production from 1961 to 2023. It shows a relentless upward climb, moving from 70 million tonnes to nearly 370 million.",
-      context: "This fivefold increase in 60 years is often framed as progress, but it represents a massive shift in how we utilize global resources.",
-      personal: "Seeing this line made me realize that my consumption wasn't just a personal choice — it was part of a global surge that shows no signs of slowing down."
+      explanation: "Global meat production has grown from 70 million tonnes in 1961 to nearly 370 million tonnes in 2023. <strong> That is more than a fivefold increase in six decades </strong>.",
+      context: "To put 370 million tonnes in perspective: Ultra large Container ships would approximately need 1500 to 1600 voyages to carry the load. That is the number, produced and slaughtered every single year. The system that generates this has grown so large and so fast that most of us never paused to ask what it actually costs.",
+      personal: "I came to this data already caring about sustainability, but I had never looked at meat production directly. When I saw this line for the first time, what struck me was not the endpoint but the slope. The Graph still keeps rising."
     },
     visualId: 0,
     tableauSheet: BASE + 'GlobalMeatProduction' + PARAMS,
@@ -38,9 +38,9 @@ export const storyData: StorySection[] = [
     subtitle: "Animals Slaughtered per Year",
     category: "Global Scale",
     paragraphs: {
-      explanation: "When you translate tonnes into living terms, the scale becomes staggering: over 80 billion animals are slaughtered every single year.",
-      context: "Chickens dominate this chart because they are cheap and efficient to produce, leading to a slaughter rate that dwarfs all other livestock.",
-      personal: "This was the first time the data felt heavy. It's one thing to talk about tonnes, but 80 billion lives is a number that is hard to sit with."
+      explanation: "In 2023, over 80 billion land animals were slaughtered for food. Chickens dominate the chart almost entirely. Around <strong>75 billion per year </strong> with pigs, cattle, sheep and others accounting for the rest. The numbers have risen steadily alongside production, but the chicken line has accelerated far faster than any other species as they are easy to produce and cheap to buy.",
+      context: "75 billion is a number that resists intuition. If you counted one animal per second without stopping, it would take over 2,400 years to reach 80 billion. The sheer scale of this system is one of the least discussed facts in mainstream conversations about food.",
+      personal: "This was the chart where the data felt more abstract than ever. Trying to set the number into context feels almost impossible as the number is too big to imagine."
     },
     visualId: 1,
     tableauSheet: BASE + 'Animalsslaughtered' + PARAMS,
@@ -48,12 +48,12 @@ export const storyData: StorySection[] = [
   {
     id: "meat-supply",
     title: "Uneven Plates",
-    subtitle: "Meat Supply per Person",
+    subtitle: "Meat Supply per Person, 2022",
     category: "Global Scale",
     paragraphs: {
-      explanation: "This map shows that meat consumption isn't evenly distributed. Wealthier nations in the North consume significantly more per person than the Global South.",
-      context: "We aren't producing more meat because the whole world needs it; we're producing it because some regions consume it in extreme excess.",
-      personal: "It made me question the fairness of my diet. Why was I consuming so much more than the global average, and at what cost to others?"
+      explanation: "This map shows average meat supply per person per year across countries in 2022. The spread is enormous: Australia and the United States exceed 120 kg, while many countries in sub Africa and South Asia consume less than 10 kg. We are not producing more meat because everyone needs it. We are producing more because some countries consume excessively",
+      context: "The environmental pressure of meat production falls on the whole planet, while the consumption is concentrated in the wealthiest countries. Overconsumption in one place has consequences everywhere as we will further discover.",
+      personal: "Seeing Germany in the darker half of this map was a specific kind of uncomfortable. I had always thought of my diet as fairly normal because in my context, it was. That is precisely the point. Normal in Germany means among the top global consumers. The map made me question what baseline I had been measuring myself against."
     },
     visualId: 2,
     tableauSheet: BASE + 'MeatSupply' + PARAMS,
@@ -61,12 +61,12 @@ export const storyData: StorySection[] = [
   {
     id: "ghg-product",
     title: "The Carbon Cost",
-    subtitle: "GHG Emissions per kg by Product",
+    subtitle: "GHG (kg) Emissions per kg of Food Produced",
     category: "Environmental Impact",
     paragraphs: {
-      explanation: "Beef sits at the top of this chart, emitting nearly 100kg of CO2 per kilogram of meat produced.",
-      context: "Lamb and farmed prawns follow closely. In contrast, most plant-based foods stay well under the 5kg mark.",
-      personal: "The gap wasn't just a few percentage points — it was a massive structural difference that I couldn't ignore."
+      explanation: "This chart ranks food products by their greenhouse gas emissions per kilogram produced, covering the full supply chain: land use, feed production, animal digestion, processing, and transport. Beef tops the list at around 99 kg CO2-equivalent per kg. At the other end, peas emit less than 1 kg. The gap between the top and bottom of this chart spans two orders of magnitude.",
+      context: "To make the beef figure concrete: driving an average car produces roughly 170g of CO2 per kilometer. One kilogram of beef is equivalent to driving about 59 kilometers. That is before counting any other meat.",
+      personal: "I had a rough sense that beef was bad for emissions. What I did not have was a sense of the scale. Chicken produces around 9 kg CO2 per kg, already significant, but beef produces ten times more. It changes how you think about what a realistic dietary shift might actually look like."
     },
     visualId: 3,
     tableauSheet: BASE + 'GHGperkgbyproduct' + PARAMS,
@@ -74,13 +74,13 @@ export const storyData: StorySection[] = [
   {
     id: "ghg-average",
     title: "The Category Gap",
-    subtitle: "GHG Emissions by Average",
+    subtitle: "GHG Emissions by Food Category",
     category: "Environmental Impact",
-    singleBubble: "If we average out all the products from the previous chart, the pattern becomes undeniable. Meat sits at nearly 29 kg CO2 per kg — over seven times higher than plant-based foods at under 4 kg. No matter which product you pick, the category you eat from makes all the difference.",
+    singleBubble: "The previous chart showed individual products. This one averages across entire food categories. Meat as a whole averages 29 kg CO2 per kg — more than seven times higher than plant-based foods at under 4 kg. Even dairy and vegetarian products, which include eggs and cheese, sit at around 10 kg. The variation within each category is real, but the gap between categories is structural. It does not disappear when you average it out.",
     paragraphs: {
-      explanation: "When averaged out, meat produces about 29kg of CO2 per kg. Dairy and vegetarian products sit around 10kg.",
-      context: "Plant-based foods average under 4kg. This comparison highlights the inherent inefficiency of animal-based protein.",
-      personal: "Seeing the averages made the choice feel simpler. It wasn't about finding better meat, but about shifting the category entirely."
+      explanation: "When averaged out, meat produces about 34 kg of CO2 per kg. Dairy and vegetarian products sit around 10 kg.",
+      context: "Plant-based foods average under 4 kg. This comparison highlights the inherent inefficiency of animal-based protein.",
+      personal: "Seeing the averages made the choice feel simpler. It was not about finding better meat, but about shifting the category entirely."
     },
     visualId: 4,
     tableauSheet: BASE + 'GHGperkgbyaverage' + PARAMS,
@@ -88,12 +88,12 @@ export const storyData: StorySection[] = [
   {
     id: "land-use",
     title: "The Space We Take",
-    subtitle: "Land Use per kg",
+    subtitle: "Land Use per kg of Food Produced",
     category: "Environmental Impact",
     paragraphs: {
-      explanation: "Meat requires about 111 square meters of land per kilogram. Plant-based foods require only about 6.",
-      context: "This treemap shows that meat production is the primary driver of land conversion, leading to deforestation and biodiversity loss.",
-      personal: "The physical space required for a single steak compared to a bowl of lentils made the environmental impact feel tangible."
+      explanation: "This treemap shows average land use per kilogram of food by category. Meat requires around 111 square meters per kg, the size of a common family home, to produce a single kilogram. Dairy needs about 34 square meters. Plant-based foods average just 6 square meters. The visual area of each rectangle is proportional to land demand, which is why meat fills most of the picture.",
+      context: "Agriculture already occupies about 50% of all habitable land on Earth. Of that, 77% is used for livestock. We route enormous amounts of land through animals to get a fraction of the nutritional output we could get from plants directly. Land converted for agriculture is the single leading driver of habitat destruction and species loss globally.",
+      personal: "The land chart hit differently than the emissions chart, because land feels finite in a way that emissions do not. Knowing that one kilogram of beef requires over 100 times the land of one kilogram of rice made the abstraction suddenly very physical."
     },
     visualId: 5,
     tableauSheet: BASE + 'landuse' + PARAMS,
@@ -101,12 +101,12 @@ export const storyData: StorySection[] = [
   {
     id: "soybean-use",
     title: "The Feed Myth",
-    subtitle: "Global Soybean Use",
+    subtitle: "Global Soybean Use by Purpose",
     category: "Environmental Impact",
     paragraphs: {
-      explanation: "Most of the world's soy isn't feeding vegans; it's feeding livestock. Animal feed completely dominates global soy use.",
-      context: "When you eat meat, you're consuming land and water twice — once for the animal and once for the crops that fed it.",
-      personal: "This debunked the idea that my soy milk was the problem. The real problem was the hidden soy in the meat I was eating."
+      explanation: "This chart tracks global soybean use from 1961 to 2022, split by purpose: animal feed, human food, and processed products like oil. The animal feed line dominates and has grown steeply since the 1970s. Today, roughly 80% of all soybeans grown globally go to livestock feed. The portion eaten directly by humans remains small by comparison.",
+      context: "Soy agriculture is one of the primary drivers of deforestation in the Amazon and the Brazilian Cerrado. When critics point to soy as a problem with plant-based diets, they are describing the wrong end of the supply chain. The vast majority of soy-driven deforestation exists to feed animals, not people. Eating plants directly requires far less soy, and far less land, than eating the animals that soy was used to raise.",
+      personal: "This chart addressed something I had genuinely wondered about. I had seen arguments that soy farming was destroying the rainforest and that vegans were responsible. The data tells a different story. Most soy travels invisibly through animals before reaching a plate."
     },
     visualId: 6,
     tableauSheet: BASE + 'Globalsyobeanuse' + PARAMS,
@@ -114,12 +114,12 @@ export const storyData: StorySection[] = [
   {
     id: "water-withdrawals",
     title: "Thirsty Industry",
-    subtitle: "Freshwater Withdrawals",
+    subtitle: "Freshwater Withdrawals per kg of Food",
     category: "Environmental Impact",
     paragraphs: {
-      explanation: "Meat production uses roughly 1800 liters of freshwater per kilogram, while plant-based foods average around 587.",
-      context: "In a world facing growing water scarcity, the high water footprint of animal agriculture becomes a critical concern.",
-      personal: "Water is a finite resource. Realizing how much hidden water was in my diet was a major turning point for me."
+      explanation: "This chart compares freshwater withdrawals per kilogram of food across the three main categories. Meat requires around 1,800 liters per kg. Dairy sits higher at around 2,270 liters, pulled up by cheese. Plant-based foods average around 587 liters. A single beef burger patty requires approximately 2,400 liters of water to produce, enough to fill a standard bathtub 18 times.",
+      context: "Around 2 billion people currently live in countries experiencing high water stress. Agriculture accounts for roughly 72% of all global freshwater withdrawals, and livestock systems, both directly and through feed crop irrigation, account for a disproportionate share of that. In a world where water scarcity is projected to intensify significantly by 2050, the water cost of food becomes a resource allocation question, not just a personal one.",
+      personal: "Water was the third dimension where the same pattern appeared. Emissions, land, water, all pointing in the same direction. By this point I was not discovering new information so much as watching a pattern confirm itself across completely independent metrics. That consistency was harder to dismiss than any single statistic would have been on its own."
     },
     visualId: 7,
     tableauSheet: BASE + 'Freshwaterwithdrawls' + PARAMS,
@@ -127,12 +127,12 @@ export const storyData: StorySection[] = [
   {
     id: "climax",
     title: "The Moment it Clicked",
-    subtitle: "Impact of Land, Food, and Water",
+    subtitle: "Three Dimensions of Environmental Impact",
     category: "Environmental Impact",
     paragraphs: {
-      explanation: "This scatterplot ties it all together. Red dots (meat) cluster in the high-impact corner: high emissions, high land use, high water use.",
-      context: "Green dots (plant-based) sit in the low-impact corner. The pattern is consistent across three independent dimensions.",
-      personal: "This was the chart. No more excuses. Across every metric, the data pointed to the same conclusion."
+      explanation: "This scatterplot maps individual food products across three environmental dimensions simultaneously: greenhouse gas emissions on the x-axis, land use on the y-axis, and freshwater withdrawal as bubble size. Each dot is a food product, colored by category. Red is meat, yellow is dairy and vegetarian, green is plant-based.",
+      context: "The pattern is not subtle. Red dots cluster in the upper right, high emissions, high land use, high freshwater withdrawal. Green dots sit in the lower left, low on all three. What makes this chart significant is that these three variables are measured independently, from different data sources, using different methodologies. The alignment across reflects something structural about how animal agriculture works.",
+      personal: "This was the chart where everything stopped being a collection of separate facts and became a single coherent argument. No single number had changed my mind. But this visual with three independent measures, all telling the same story at once was the moment I stopped finding the data interesting and started feeling the need to act on it."
     },
     visualId: 8,
     tableauSheet: BASE + 'Impactoflandfoodwater' + PARAMS,
@@ -140,51 +140,51 @@ export const storyData: StorySection[] = [
   {
     id: "slaughter-production",
     title: "Efficiency vs. Life",
-    subtitle: "Animals Slaughtered vs. Production",
+    subtitle: "Animals Slaughtered vs. Meat Produced",
     category: "Global Scale",
     paragraphs: {
-      explanation: "This comparison shows the relationship between the number of animals killed and the actual weight of meat produced.",
-      context: "It highlights the industrial scale of the industry, where lives are treated as units of production in a high-speed system.",
-      personal: "It made me think about the machinery of it all. The data showed a system that prioritizes speed and volume over everything else."
+      explanation: "This dual-axis chart overlays two trends: total meat production in tonnes and total animals slaughtered, both from 1961 to 2023. Both lines rise across the full period. In recent decades, the animal count has grown faster than the production weight, reflecting and underlining a shift toward smaller-bodied animals, particularly chickens, which produce less meat per animal but are slaughtered in far greater numbers.",
+      context: "The divergence between the two lines tells a specific story about how the industry has optimised. As told before, chickens are cheap to raise, fast to grow, and space-efficient which makes them economically dominant. From a resource perspective, chicken is significantly more efficient than beef. From the perspective of animal numbers, the shift toward chicken has meant more individual lives inside the system, not fewer, trying to meat the rising demand.",
+      personal: "Plotting the two lines together made something visible that the individual charts had kept separate. Production statistics describe an industry. Animal counts describe lives. Seeing them rise together, in parallel, for sixty years, was a reminder that efficiency is a value-neutral term. The system optimised for cost and output."
     },
     visualId: 9,
     tableauSheet: BASE + 'Animalsslaughteredproduction' + PARAMS,
   },
   {
     id: "antibiotic-usage",
-    title: "The Health Risk",
-    subtitle: "Antibiotic Usage in Livestock",
+    title: "The Hidden Risk",
+    subtitle: "Antibiotic Use in Livestock by Country",
     category: "Health Impact",
     paragraphs: {
-      explanation: "Antibiotics are routinely used in industrial farming to prevent disease in crowded conditions and promote growth.",
-      context: "This map shows usage levels by country, with some regions showing alarming levels of routine antibiotic use.",
-      personal: "This shifted the story from the environment to public health. It wasn't just about the planet; it was about our future safety."
+      explanation: "This world map shows antibiotic use in livestock production by country, measured in milligrams per kilogram of meat produced. China, Mongolia and parts of Southeast Asia and Latin America stand out with the highest usage. Most of Europe has reduced livestock antibiotic use significantly through regulation over the past decade, though global usage remains high.",
+      context: "Antibiotics in livestock are used for two purposes: treating sick animals, and, in many countries, preventing disease in overcrowded conditions and promoting faster growth. The second use is what drives the public health concern. When antibiotics are used routinely across large animal populations, bacteria evolve resistance. Those resistant strains can transfer to humans through food, contact, or shared environments. The WHO classifies antibiotic resistance as one of the top ten global public health threats.",
+      personal: "The antibiotic dimension was not something I had looked for when I started this project. I was focused on climate and land. But the data kept expanding the frame. Finding that the same industrial system was also accelerating one of the most serious health threats of the coming century made it feel less like a dietary preference and more like a systems problem with consequences well beyond my plate."
     },
     visualId: 10,
     tableauSheet: BASE + 'AntibioticUsage' + PARAMS,
   },
   {
     id: "meat-antibiotics-scatter",
-    title: "The Correlation",
-    subtitle: "Meat Consumption vs. Antibiotic Usage",
+    title: "The Inequality",
+    subtitle: "Meat Consumption vs. Antibiotic Use by Country",
     category: "Health Impact",
     paragraphs: {
-      explanation: "When you plot meat consumption against antibiotic use, a clear pattern emerges: higher consumption often goes with higher antibiotic use.",
-      context: "Industrialized meat systems rely on these drugs to sustain high-density populations of livestock.",
-      personal: "The link between my dinner plate and the global threat of antibiotic resistance became impossible to ignore."
+      explanation: "This scatterplot plots countries by per capita meat consumption on the x-axis and livestock antibiotic use on the y-axis, colored by continent. What emerges is not a clean correlation telling an important story. Europe consumes large amounts of meat but uses relatively few antibiotics, because strict regulation has made that possible. Much of Asia, Latin America, and Africa sits higher on the antibiotic axis, producing meat under conditions that wealthy, regulated markets have effectively outsourced.",
+      context: "he countries with the highest antibiotic use in livestock are often not the ones consuming the most meat per person. They are the ones producing it for export, or producing it cheaply because regulations that Europe and North America enacted at home were never required of their suppliers abroad. A German consumer eating imported chicken benefits from a regulatory system that cleaned up domestic farming, while the health risk of antibiotic resistance generated elsewhere is shared by everyone. Resistant bacteria do not stop at borders.",
+      personal: "This chart made the connection between consumption and consequence more direct than the environmental charts had. Antibiotic resistance is one of the main health risk. Knowing that meat consumption is responsible for greater antibiotic use meant the story had moved beyond ecological concern."
     },
     visualId: 11,
     tableauSheet: BASE + 'MeatConsumtionandAntibiotica' + PARAMS,
   },
   {
     id: "antibiotics-final",
-    title: "The Final Reckoning",
-    subtitle: "Meat Consumption and Antibiotics",
+    title: "Country by Country",
+    subtitle: "Meat Consumption and Antibiotic Use per Nation",
     category: "Health Impact",
     paragraphs: {
-      explanation: "This final view reinforces the public health threat. Antibiotic overuse in animals is a main driver of resistance in humans.",
-      context: "The WHO has flagged this as a major global threat. Resistant bacteria don't respect species boundaries.",
-      personal: "The data made a compelling case. It wasn't just one chart; it was the cumulative weight of all of them."
+      explanation: "This chart breaks the scatterplot down to individual countries, showing both per capita meat consumption and livestock antibiotic use side by side. It makes it possible to see exactly where the two values track closely and where they diverge, revealing which countries have successfully decoupled high consumption from high antibiotic use, and which have not.",
+      context: "Denmark, the Netherlands, and Germany have managed to maintain relatively high meat consumption while reducing antibiotic use substantially — through mandatory reduction targets and strict veterinary oversight. Countries without equivalent frameworks show no such decoupling. The health consequences of industrial meat production are not inevitable. But avoiding them requires sustained institutional effort that is currently the exception, not the rule.",
+      personal: "By the time I reached this chart, no single number was surprising anymore. What stayed with me was the cumulative structure of everything I had seen: production scale, animal counts, geographic inequality, emissions, land, water, feed chains, antibiotic resistance — twelve completely different ways of measuring the same system, all pointing in the same direction. That was what changed my mind. Not any one chart. The pattern."
     },
     visualId: 12,
     tableauSheet: BASE + 'meatconsumptionantibiotica' + PARAMS,
