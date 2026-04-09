@@ -96,7 +96,7 @@ export const storyData: StorySection[] = [
       personal: "The physical space required for a single steak compared to a bowl of lentils made the environmental impact feel tangible."
     },
     visualId: 5,
-    tableauSheet: BASE + 'Landuseperkg' + PARAMS,
+    tableauSheet: BASE + 'landuse' + PARAMS,
   },
   {
     id: "soybean-use",
@@ -174,7 +174,7 @@ export const storyData: StorySection[] = [
       personal: "The link between my dinner plate and the global threat of antibiotic resistance became impossible to ignore."
     },
     visualId: 11,
-    tableauSheet: BASE + 'MeatConsumptionandAntibiotica' + PARAMS,
+    tableauSheet: BASE + 'MeatConsumtionandAntibiotica' + PARAMS,
   },
   {
     id: "antibiotics-final",
