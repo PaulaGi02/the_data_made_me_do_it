@@ -6,7 +6,7 @@ export interface StorySection {
   subtitle?: string;
   category: StoryCategory;
   singleBubble?: string;
-  paragraphs: {
+  paragraphs?: {
     explanation: string;
     context: string;
     personal: string;
@@ -77,11 +77,6 @@ export const storyData: StorySection[] = [
     subtitle: "GHG Emissions by Food Category",
     category: "Environmental Impact",
     singleBubble: "The previous chart showed individual products. This one averages across entire food categories. Meat as a whole averages 29 kg CO2 per kg — more than seven times higher than plant-based foods at under 4 kg. Even dairy and vegetarian products, which include eggs and cheese, sit at around 10 kg. The variation within each category is real, but the gap between categories is structural. It does not disappear when you average it out.",
-    paragraphs: {
-      explanation: "When averaged out, meat produces about 34 kg of CO2 per kg. Dairy and vegetarian products sit around 10 kg.",
-      context: "Plant-based foods average under 4 kg. This comparison highlights the inherent inefficiency of animal-based protein.",
-      personal: "Seeing the averages made the choice feel simpler. It was not about finding better meat, but about shifting the category entirely."
-    },
     visualId: 4,
     tableauSheet: BASE + 'GHGperkgbyaverage' + PARAMS,
   },
@@ -170,22 +165,18 @@ export const storyData: StorySection[] = [
     category: "Health Impact",
     paragraphs: {
       explanation: "This scatterplot plots countries by per capita meat consumption on the x-axis and livestock antibiotic use on the y-axis, colored by continent. What emerges is not a clean correlation telling an important story. Europe consumes large amounts of meat but uses relatively few antibiotics, because strict regulation has made that possible. Much of Asia, Latin America, and Africa sits higher on the antibiotic axis, producing meat under conditions that wealthy, regulated markets have effectively outsourced.",
-      context: "he countries with the highest antibiotic use in livestock are often not the ones consuming the most meat per person. They are the ones producing it for export, or producing it cheaply because regulations that Europe and North America enacted at home were never required of their suppliers abroad. A German consumer eating imported chicken benefits from a regulatory system that cleaned up domestic farming, while the health risk of antibiotic resistance generated elsewhere is shared by everyone. Resistant bacteria do not stop at borders.",
+      context: "The countries with the highest antibiotic use in livestock are often not the ones consuming the most meat per person. They are the ones producing it for export, or producing it cheaply because regulations that Europe and North America enacted at home were never required of their suppliers abroad. A German consumer eating imported chicken benefits from a regulatory system that cleaned up domestic farming, while the health risk of antibiotic resistance generated elsewhere is shared by everyone. Resistant bacteria do not stop at borders.",
       personal: "This chart made the connection between consumption and consequence more direct than the environmental charts had. Antibiotic resistance is one of the main health risk. Knowing that meat consumption is responsible for greater antibiotic use meant the story had moved beyond ecological concern."
     },
     visualId: 11,
     tableauSheet: BASE + 'MeatConsumtionandAntibiotica' + PARAMS,
   },
   {
-    id: "antibiotics-final",
-    title: "Country by Country",
-    subtitle: "Meat Consumption and Antibiotic Use per Nation",
-    category: "Health Impact",
-    paragraphs: {
-      explanation: "This chart breaks the scatterplot down to individual countries, showing both per capita meat consumption and livestock antibiotic use side by side. It makes it possible to see exactly where the two values track closely and where they diverge, revealing which countries have successfully decoupled high consumption from high antibiotic use, and which have not.",
-      context: "Denmark, the Netherlands, and Germany have managed to maintain relatively high meat consumption while reducing antibiotic use substantially — through mandatory reduction targets and strict veterinary oversight. Countries without equivalent frameworks show no such decoupling. The health consequences of industrial meat production are not inevitable. But avoiding them requires sustained institutional effort that is currently the exception, not the rule.",
-      personal: "By the time I reached this chart, no single number was surprising anymore. What stayed with me was the cumulative structure of everything I had seen: production scale, animal counts, geographic inequality, emissions, land, water, feed chains, antibiotic resistance — twelve completely different ways of measuring the same system, all pointing in the same direction. That was what changed my mind. Not any one chart. The pattern."
-    },
+  id: "antibiotics-final",
+  title: "Country by Country",
+  subtitle: "Meat Consumption and Antibiotic Use per Nation",
+  category: "Health Impact",
+  singleBubble: "This chart breaks the scatterplot down to individual countries, showing both per capita meat consumption and livestock antibiotic use side by side. It makes it possible to see exactly where the two values track closely and where they diverge, revealing which countries have successfully decoupled high consumption from high antibiotic use, and which have not.",
     visualId: 12,
     tableauSheet: BASE + 'meatconsumptionantibiotica' + PARAMS,
   }
