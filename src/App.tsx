@@ -218,8 +218,11 @@ const NarrativeRow: React.FC<NarrativeRowProps> = ({label, heading, body, Illust
             <p className={`text-[10px] font-black uppercase tracking-[0.4em] ${dark ? 'text-lg opacity-70' : 'text-mg'}`}>{label}</p>
             <h2 className={`font-serif font-black leading-[1.05] text-4xl md:text-5xl ${dark ? 'text-cream' : 'text-dg'}`}
                 dangerouslySetInnerHTML={{__html: heading}}/>
-            <p className={`font-body text-lg md:text-xl leading-relaxed ${dark ? 'text-cream/80' : 'text-ink/80'}`}
-               dangerouslySetInnerHTML={{__html: body}}/>
+            <p
+    style={{color: dark ? 'white' : '#18160f'}}
+    className="font-body text-lg md:text-xl leading-relaxed"
+    dangerouslySetInnerHTML={{__html: body}}
+/>
         </motion.div>
     );
 
@@ -295,8 +298,8 @@ const ConclusionSignoff: React.FC = () => {
                             "I grew up eating meat almost every day. It felt normal as it was in Germany. Looking at this data didn't make me angry or self-righteous. It made me quietly reckon with how much I hadn't thought about. I went vegan not because someone told me to, but because I couldn't unsee what the numbers showed."
                         </p>
                     </div>
-                    <p className="font-body text-lg md:text-xl leading-relaxed text-ink/70">
-                        The data is public. The pattern is there whether I narrate it or not. What you do with it is entirely up to you — but at least now you've seen it.
+                    <p className="font-body text-ink/70 md:text-xl leading-relaxed text-ink/70">
+                        The data is public. The pattern is there whether I narrate it or not. What you do with it is entirely up to you, but at least now you've seen it.
                     </p>
                 </motion.div>
             </div>
@@ -467,7 +470,7 @@ export default function App() {
                 <NarrativeRow
                     label=""
                     heading="Twelve charts. Three dimensions. One conclusion."
-                    body="Each section shows a different dataset showcasing the status quo (global scale), the environmental- and the health impact. Scroll through them and watch whether a pattern emerges. I'll tell you what I found, but you can look for yourself."
+                    body="Each section shows a different dataset showcasing the global scale, the environmental- and the health impact. Scroll through them and watch whether a pattern emerges. I'll tell you what I found, but you can look for yourself."
                     Illustration={WatercolourHellebore}
                     flip={true} dark={true} delay={0.1}
                 />

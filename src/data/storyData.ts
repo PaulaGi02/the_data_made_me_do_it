@@ -139,7 +139,7 @@ export const storyData: StorySection[] = [
     category: "Global Scale",
     paragraphs: {
       explanation: "This dual-axis chart overlays two trends: total meat production in tonnes and total animals slaughtered, both from 1961 to 2023. Both lines rise across the full period. In recent decades, the animal count has grown faster than the production weight, reflecting and underlining a shift toward smaller-bodied animals, particularly chickens, which produce less meat per animal but are slaughtered in far greater numbers.",
-      context: "The divergence between the two lines tells a specific story about how the industry has optimised. As told before, chickens are cheap to raise, fast to grow, and space-efficient which makes them economically dominant. From a resource perspective, chicken is significantly more efficient than beef. From the perspective of animal numbers, the shift toward chicken has meant more individual lives inside the system, not fewer, trying to meat the rising demand.",
+      context: "The divergence between the two lines tells a specific story about how the industry has optimised. As told before, chickens are cheap to raise, fast to grow, and space-efficient which makes them economically dominant. From a resource perspective, chicken is significantly more efficient than beef. From the perspective of animal numbers, the shift toward chicken has meant more individual lives inside the system, not fewer, trying to meet the rising demand.",
       personal: "Plotting the two lines together made something visible that the individual charts had kept separate. Production statistics describe an industry. Animal counts describe lives. Seeing them rise together, in parallel, for sixty years, was a reminder that efficiency is a value-neutral term. The system optimised for cost and output."
     },
     visualId: 9,
@@ -169,7 +169,7 @@ export const storyData: StorySection[] = [
       personal: "This chart made the connection between consumption and consequence more direct than the environmental charts had. Antibiotic resistance is one of the main health risk. Knowing that meat consumption is responsible for greater antibiotic use meant the story had moved beyond ecological concern."
     },
     visualId: 11,
-    tableauSheet: BASE + 'MeatConsumtionandAntibiotica' + PARAMS,
+    tableauSheet: BASE + 'MeatConsumptionandAntibiotica' + PARAMS,
   },
   {
   id: "antibiotics-final",
