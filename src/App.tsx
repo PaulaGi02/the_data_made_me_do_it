@@ -79,10 +79,6 @@ const WatercolourHellebore: React.FC<{ className?: string; opacity?: number }> =
             <circle cx="0" cy="0" r="6.5" fill="#eaf6d8" opacity="0.82"/>
             <circle cx="0" cy="0" r="3" fill="#bad692" opacity="0.65"/>
         </g>
-        <g transform="translate(120,68)">
-            <ellipse cx="0" cy="0" rx="7" ry="14" fill="#c0dc9e" opacity="0.7" transform="rotate(-10)"/>
-            <ellipse cx="6" cy="2" rx="6" ry="12" fill="#b8d496" opacity="0.62" transform="rotate(15)"/>
-        </g>
     </svg>
 );
 
@@ -102,9 +98,6 @@ const WatercolourLeaves: React.FC<{ className?: string; opacity?: number }> = ({
         <path d="M140,200 C175,182 205,188 222,164 C232,150 225,130 208,125 C190,120 166,134 148,156" fill="#80b880" opacity="0.44" filter="url(#wcl)"/>
         <path d="M138,148 C170,128 198,134 214,110 C222,98 214,78  198,74  C180,70  158,84  142,108" fill="#70ae70" opacity="0.42" filter="url(#wcl)"/>
         <path d="M136,98  C162,76  186,80  200,58  C206,46  198,28  184,26  C168,22  148,38  136,60" fill="#86c286" opacity="0.38" filter="url(#wcl)"/>
-        <ellipse cx="58" cy="240" rx="12" ry="20" transform="rotate(-25 58 240)" fill="#8aba8a" opacity="0.38"/>
-        <ellipse cx="220" cy="255" rx="10" ry="17" transform="rotate(30 220 255)" fill="#78b078" opacity="0.35"/>
-        <ellipse cx="250" cy="180" rx="9" ry="16" transform="rotate(-18 250 180)" fill="#82be82" opacity="0.33"/>
     </svg>
 );
 
@@ -130,8 +123,6 @@ const WatercolourBranch: React.FC<{ className?: string; opacity?: number }> = ({
         <ellipse cx="274" cy="22" rx="16" ry="26" transform="rotate(-30 274 22)" fill="#78b878" opacity="0.46" filter="url(#wcb)"/>
         <ellipse cx="260" cy="18" rx="13" ry="21" transform="rotate(-46 260 18)" fill="#86c286" opacity="0.4"/>
         <ellipse cx="288" cy="20" rx="12" ry="20" transform="rotate(-18 288 20)" fill="#6cac6c" opacity="0.42"/>
-        <ellipse cx="135" cy="148" rx="13" ry="22" transform="rotate(-15 135 148)" fill="#8aba8a" opacity="0.38"/>
-        <ellipse cx="210" cy="118" rx="12" ry="20" transform="rotate(-20 210 118)" fill="#7ab27a" opacity="0.36"/>
     </svg>
 );
 
