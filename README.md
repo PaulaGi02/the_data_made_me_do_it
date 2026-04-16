@@ -1,93 +1,52 @@
-# 🌱 The Data Made Me Do It
+# The Data Made Me Do It
 
-A scrollytelling web experience exploring the data behind the decision to go vegan. Built with React, TypeScript, Vite, and Tailwind CSS, with embedded Tableau visualizations.
+A scrollytelling web experience exploring the environmental and health data behind the decision to go vegan. 
+The project walks through 13 data-driven sections: from global meat production trends to antibiotic resistance, 
+each paired with an embedded Tableau visualization.
 
----
-
-## Prerequisites
-
-Before running this project locally, make sure you have the following installed:
-
-- **Node.js** (version 18 or higher) — [Download here](https://nodejs.org/)
-- **npm** (comes bundled with Node.js)
-
-To verify your installations, run:
-
-```bash
-node -v
-npm -v
-```
-
----
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-cd <project-folder-name>
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Start the development server
-
-```bash
-npm run dev
-```
-
-### 4. Open in your browser
-
-Once the server is running, open your browser and navigate to:
-
-```
-http://localhost:3000
-```
-
-The site will automatically reload whenever you save changes to the source files.
-
----
-
-## Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Starts the local development server on port 3000 |
-| `npm run build` | Builds the project for production (output goes to `dist/`) |
-| `npm run preview` | Previews the production build locally |
-| `npm run lint` | Runs TypeScript type checking |
-| `npm run clean` | Deletes the `dist/` build folder |
-
----
-
-## Project Structure (main parts)
-
-```
-├── App.tsx           # Main application component and page layout
-├── TableauViz.tsx    # Tableau embed component
-├── storyData.ts      # Content and data for each story section
-├── main.tsx          # React app entry point
-├── index.css         # Global styles
-├── index.html        # HTML shell
-├── vite_config.ts    # Vite configuration
-└── tsconfig.json     # TypeScript configuration
-```
+Built as a final project for the *Understanding Data* module.
 
 ---
 
 ## Tech Stack
 
-- **React 19** — UI framework
-- **TypeScript** — Type safety
-- **Vite** — Fast development server and bundler
-- **Tailwind CSS 4** — Utility-first styling
-- **Motion (Framer Motion)** — Scroll animations
-- **Tableau Public** — Embedded data visualizations
-- **Lucide React** — Icons
+| Tool | Purpose |
+|---|---|
+| React 19 + TypeScript | UI and component logic |
+| Vite | Development server and bundler |
+| Tailwind CSS 4 | Styling |
+| Motion (Framer Motion) | Scroll animations |
+| Tableau Public | Embedded data visualizations |
+| Lucide React | Icons |
 
 ---
+
+## Running Locally
+
+**Prerequisites:** Node.js 18+ and npm.
+
+```bash
+# Clone the repository
+git clone <your-repository-url>
+cd <project-folder>
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start local dev server on port 3000 |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run TypeScript type checking |
+| `npm run clean` | Delete the `dist/` build folder |
