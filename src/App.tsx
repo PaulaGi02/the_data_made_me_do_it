@@ -13,7 +13,7 @@ const CHART_BG = [
     'bg-cream',
 ];
 
-// ─── Watercolour SVG illustrations ───────────────────────────────────────────
+// ─── Flowerss <3 ───────────────────────────────────────────
 
 const WatercolourEucalyptus: React.FC<{ className?: string; opacity?: number }> = ({className = '', opacity = 1}) => (
     <svg viewBox="0 0 320 420" xmlns="http://www.w3.org/2000/svg" className={className} style={{opacity}}>
@@ -126,7 +126,7 @@ const WatercolourBranch: React.FC<{ className?: string; opacity?: number }> = ({
     </svg>
 );
 
-// ─── Corner botanicals for chart frames ──────────────────────────────────────
+// ─── Corner botanicals for charts ──────────────────────────────────────
 const CORNER_SVGS = [
     (color: string) => (
         <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
@@ -184,7 +184,7 @@ const ChartCornerPlant: React.FC<{ position: 'tl' | 'tr' | 'bl' | 'br'; variant:
     );
 };
 
-// ─── Narrative row ────────────────────────────────────────────────────────────
+// ─── Narrative  ────────────────────────────────────────────────────────────
 interface NarrativeRowProps {
     label: string;
     heading: string;
@@ -242,7 +242,7 @@ const NarrativeRow: React.FC<NarrativeRowProps> = ({label, heading, body, Illust
     );
 };
 
-// ─── Personal sign-off ────────────────────────────────────────────────────────
+// ─── Personal statements ────────────────────────────────────────────────────────
 const ConclusionSignoff: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref, {once: true, amount: 0.2});
@@ -298,7 +298,7 @@ const ConclusionSignoff: React.FC = () => {
     );
 };
 
-// ─── Scrollytelling bubble ────────────────────────────────────────────────────
+// ─── Scrollytelling bubbles ────────────────────────────────────────────────────
 interface SubSectionProps {
     content: string;
     type: 'explanation' | 'context' | 'personal';
@@ -343,7 +343,7 @@ const SubSection: React.FC<SubSectionProps> = ({content, type, align, title, sub
     </div>
 );
 
-// ─── Per-chart sticky section ─────────────────────────────────────────────────
+// ───  sticky section ─────────────────────────────────────────────────
 const StorySectionWrapper: React.FC<{ section: StorySection; index: number; onInView: (id: number) => void }> = ({section, index, onInView}) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const {scrollYProgress} = useScroll({target: containerRef, offset: ['start end', 'end start']});
