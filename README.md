@@ -2,9 +2,11 @@
 
 A scrollytelling web experience exploring the environmental and health data behind the decision to go vegan. 
 The project walks through 13 data-driven sections: from global meat production trends to antibiotic resistance, 
-each paired with an embedded Tableau visualization.
+each paired with an embedded Tableau visualization.🪴
 
 Built as a final project for the *Understanding Data* module.
+
+-> The visuals are lifeupdated from Tableau Public and need some time to load (world maps even need a bit longer)
 
 ---
 
