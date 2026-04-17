@@ -19,7 +19,6 @@ Built as a final project for the *Understanding Data* module.
 | Tailwind CSS 4 | Styling |
 | Motion (Framer Motion) | Scroll animations |
 | Tableau Public | Embedded data visualizations |
-| Lucide React | Icons |
 
 ---
 
